@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Testing</title>
+   <script src="angular.min.js"></script> 
+    <style>
+      @font-face{
+        font-family:'font1';
+        src:url('CuteBubble.ttf');
+      }
+      h1{
+        font-family:'font1';text-align:center;
+        font-size:50px;padding-top:10px;
+      }
+      .tombol{
+        background-color:#BEA8FF;
+      }
+      .kepala{
+        background-color:#BEA8FF;width:100%;height:70px;
+      }
+      .badan{
+        background-color:#FFFFFF;width:100%;height:100%;
+      }
+      .kaki{
+        background-color:#000000;width:100%;height:70px;
+      }
+    </style>
+  </head>
+  <body ng-app>
+    <div class="kepala">
+    <h1>
+      Bambang Blog
+    </h1>
+    </div>
+    <div class="badan">
+      {{"hello dunia".toUpperCase()}}</br>
+      <input type="number"ng-model="tul">
+      {{tul*2}}</br>
+      <a href="Jadwal.html"><button class="tombol">Jadwal</button></a>
+    </div>
+    <div ng-init=" nilai = 'Qwerty' "></div>
+    <div></div>
+    <div class="kaki">
+    </div>
+  </body>
+</html>
